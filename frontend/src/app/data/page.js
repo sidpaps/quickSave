@@ -43,50 +43,16 @@ const Home = () => {
         </div>
       </div>
       <div className="ml-9 mr-9 h-0.5 -mt-3 bg-white w-auto"></div>
-      <div className="flex justify-center">
-        <div className="mt-3 h-10 bg-q-green w-56 flex justify-center items-center rounded-lg">
-          <Link href="/community">Exchange Community</Link>
+      <div className="px-8 flex justify-between w-screen">
+        <button className="mt-3 pl-4 w-fu h-10  bg-q-green w-56 flex justify-start items-center rounded-lg">
+          <Link href="">Expiry Data</Link>
+        </button>
+        <div className="mt-3 w-14  h-10 bg-q-green  flex justify-center items-center rounded-lg">
+          <Link href="/home">back</Link>
         </div>
       </div>
-      <div className="flex justify-between gap-3 px-8">
-        <div className="mt-3 h-10 bg-white w-32 text-q-bg flex justify-center items-center rounded-lg">
-          <Link href="/data">Enter Data</Link>
-        </div>
-        <div className="mt-3 h-10 bg-white w-32 text-q-bg flex justify-center items-center rounded-lg">
-          <Link href="/expiry">Expiry Checker</Link>
-
-          {/* <span>Expiry Checker</span> */}
-        </div>
-        <div className="mt-3 h-10 bg-white w-32 flex text-q-bg justify-center items-center rounded-lg">
-          <span>Analytics</span>
-        </div>
-      </div>
-      <div className=" ml-6 mr-6 mt-8 rounded-xl bg-white w-auto auto h-4/6">
-        <div className="flex justify-center pt-2 text-q-bg">Ai Chatbot</div>
-        <div className="pt-96 mt-12 h-8 flex  gap-3 justify-between w-full">
-          <div className="ml-6">
-            <textarea
-              className="w-72 h-10 rounded-xl mr bg-q-bg border-0"
-              type="text"
-            />
-          </div>
-          <button className="mr-6 w-10 rounded-lg h-10 flex justify-center items-center bg-q-bg ">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.40196 6.673C3.14196 4.339 5.54496 2.625 7.66796 3.631L19.612 9.289C21.9 10.372 21.9 13.628 19.612 14.711L7.66796 20.37C5.54496 21.376 3.14296 19.662 3.40196 17.328L3.88196 13H12C12.2652 13 12.5195 12.8946 12.7071 12.7071C12.8946 12.5196 13 12.2652 13 12C13 11.7348 12.8946 11.4804 12.7071 11.2929C12.5195 11.1054 12.2652 11 12 11H3.88296L3.40196 6.673Z"
-                fill="#8AC64D"
-              />
-            </svg>
-          </button>
-        </div>
+      <div className=" mt-4 flex ml-8 ">
+      <input className="rounded-lg" type="file"></input>
       </div>
     </div>
   );

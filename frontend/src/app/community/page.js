@@ -43,49 +43,55 @@ const Home = () => {
         </div>
       </div>
       <div className="ml-9 mr-9 h-0.5 -mt-3 bg-white w-auto"></div>
-      <div className="flex justify-center">
-        <div className="mt-3 h-10 bg-q-green w-56 flex justify-center items-center rounded-lg">
-          <Link href="/community">Exchange Community</Link>
+      <div className="px-8 flex justify-between w-screen">
+        <button className="mt-3 w-fu h-10 bg-q-green w-56 hover:scale-95 active:scale-95 transition-all flex justify-center items-center rounded-lg">
+          <Link href="/community">+ Exchange Community</Link>
+        </button>
+        <div className="mt-3 w-14  h-10 bg-q-green hover:scale-95 active:scale-95 transition-all flex justify-center items-center rounded-lg">
+          <Link href="/home">back</Link>
         </div>
       </div>
-      <div className="flex justify-between gap-3 px-8">
-        <div className="mt-3 h-10 bg-white w-32 text-q-bg flex justify-center items-center rounded-lg">
-          <Link href="/data">Enter Data</Link>
-        </div>
-        <div className="mt-3 h-10 bg-white w-32 text-q-bg flex justify-center items-center rounded-lg">
-          <Link href="/expiry">Expiry Checker</Link>
+      <div className="mt-3 ml-8 text-xm font-medium">Requests</div>
+      <div className="flex h-14 bg-D-lightGrey rounded-lg mt-2">
+        <div className="bg-q-green flex justify-between h-16 w-full ml-8 mr-8 rounded-lg">
+          <div className="flex flex-col pl-7">
+            <span className="text-D-yellow mt-2 text-xm font-semibold">
+              name{" "}
+            </span>
 
-          {/* <span>Expiry Checker</span> */}
-        </div>
-        <div className="mt-3 h-10 bg-white w-32 flex text-q-bg justify-center items-center rounded-lg">
-          <span>Analytics</span>
-        </div>
-      </div>
-      <div className=" ml-6 mr-6 mt-8 rounded-xl bg-white w-auto auto h-4/6">
-        <div className="flex justify-center pt-2 text-q-bg">Ai Chatbot</div>
-        <div className="pt-96 mt-12 h-8 flex  gap-3 justify-between w-full">
-          <div className="ml-6">
-            <textarea
-              className="w-72 h-10 rounded-xl mr bg-q-bg border-0"
-              type="text"
-            />
+            <span className="text-white text-sm">item</span>
           </div>
-          <button className="mr-6 w-10 rounded-lg h-10 flex justify-center items-center bg-q-bg ">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.40196 6.673C3.14196 4.339 5.54496 2.625 7.66796 3.631L19.612 9.289C21.9 10.372 21.9 13.628 19.612 14.711L7.66796 20.37C5.54496 21.376 3.14296 19.662 3.40196 17.328L3.88196 13H12C12.2652 13 12.5195 12.8946 12.7071 12.7071C12.8946 12.5196 13 12.2652 13 12C13 11.7348 12.8946 11.4804 12.7071 11.2929C12.5195 11.1054 12.2652 11 12 11H3.88296L3.40196 6.673Z"
-                fill="#8AC64D"
-              />
-            </svg>
-          </button>
+          <div className=" flex items-center -gap-2">
+            
+            <button className="text-D-grey py-1 px-3 rounded-lg z-10 font-bold hover:scale-105 active:scale-95 transition-all">
+              <svg
+                width="29"
+                height="29"
+                viewBox="0 0 29 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.22724 13.1818C8.87764 13.1818 8.54235 13.3206 8.29514 13.5678C8.04794 13.8151 7.90906 14.1503 7.90906 14.4999C7.90906 14.8495 8.04794 15.1848 8.29514 15.432C8.54235 15.6792 8.87764 15.8181 9.22724 15.8181H19.7727C20.1223 15.8181 20.4576 15.6792 20.7048 15.432C20.952 15.1848 21.0909 14.8495 21.0909 14.4999C21.0909 14.1503 20.952 13.8151 20.7048 13.5678C20.4576 13.3206 20.1223 13.1818 19.7727 13.1818H9.22724Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 5.27273C0 3.87431 0.555518 2.53317 1.54435 1.54435C2.53317 0.555518 3.87431 0 5.27273 0H23.7273C25.1257 0 26.4668 0.555518 27.4557 1.54435C28.4445 2.53317 29 3.87431 29 5.27273V23.7273C29 25.1257 28.4445 26.4668 27.4557 27.4557C26.4668 28.4445 25.1257 29 23.7273 29H5.27273C3.87431 29 2.53317 28.4445 1.54435 27.4557C0.555518 26.4668 0 25.1257 0 23.7273V5.27273ZM5.27273 2.63636H23.7273C24.4265 2.63636 25.097 2.91412 25.5915 3.40854C26.0859 3.90295 26.3636 4.57352 26.3636 5.27273V23.7273C26.3636 24.4265 26.0859 25.097 25.5915 25.5915C25.097 26.0859 24.4265 26.3636 23.7273 26.3636H5.27273C4.57352 26.3636 3.90295 26.0859 3.40854 25.5915C2.91412 25.097 2.63636 24.4265 2.63636 23.7273V5.27273C2.63636 4.57352 2.91412 3.90295 3.40854 3.40854C3.90295 2.91412 4.57352 2.63636 5.27273 2.63636Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <div className="bg-white w-0.5 h-10"></div>
+
+            <button className="text-D-grey py-1 px-3 rounded-lg z-10 font-bold hover:scale-105 active:scale-95 transition-all">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.8554 24.375C18.8641 24.375 17.4717 24.0165 15.3866 22.8516C12.8511 21.4297 10.8899 20.117 8.36814 17.6018C5.93673 15.1719 4.75353 13.5987 3.09755 10.5854C1.22677 7.18302 1.54568 5.39959 1.90216 4.63736C2.32669 3.72635 2.95333 3.18146 3.76329 2.64064C4.22335 2.33922 4.7102 2.08084 5.21767 1.86877C5.26845 1.84693 5.31568 1.82611 5.35783 1.80732C5.60919 1.69408 5.99005 1.52295 6.47247 1.70576C6.79443 1.82662 7.08185 2.07392 7.53177 2.51826C8.45447 3.42826 9.71536 5.45494 10.1805 6.45025C10.4928 7.12107 10.6995 7.56388 10.7 8.06052C10.7 8.64197 10.4075 9.09037 10.0526 9.57431C9.98603 9.66521 9.92001 9.75205 9.85603 9.83635C9.46958 10.3442 9.38478 10.4909 9.44064 10.7529C9.55388 11.2795 10.3984 12.8472 11.7862 14.232C13.1741 15.6168 14.6965 16.4079 15.2251 16.5207C15.4983 16.5791 15.6481 16.4907 16.1722 16.0906C16.2474 16.0332 16.3245 15.9738 16.4053 15.9144C16.9466 15.5117 17.3742 15.2268 17.9419 15.2268H17.945C18.4391 15.2268 18.8621 15.4411 19.5629 15.7945C20.4769 16.2556 22.5645 17.5003 23.4801 18.424C23.9255 18.8729 24.1738 19.1593 24.2952 19.4807C24.478 19.9647 24.3058 20.344 24.1936 20.5979C24.1748 20.6401 24.154 20.6863 24.1322 20.7376C23.9184 21.2441 23.6585 21.7299 23.3557 22.1889C22.8159 22.9963 22.269 23.6214 21.3559 24.0465C20.8871 24.2682 20.374 24.3806 19.8554 24.375Z" fill="#1C2513"/>
+</svg>
+
+            </button>
+          </div>
         </div>
       </div>
     </div>
