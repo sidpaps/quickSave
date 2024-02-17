@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -44,22 +45,30 @@ const Home = () => {
       <div className="ml-9 mr-9 h-0.5 -mt-3 bg-white w-auto"></div>
       <div className="flex justify-center">
         <div className="mt-3 h-10 bg-q-green w-56 flex justify-center items-center rounded-lg">
-          <span>exchange Community</span>
+          <Link href="/request">Exchange Community</Link>
         </div>
       </div>
-      <div className="flex justify-between px-8">
+      <div className="flex justify-between gap-3 px-8">
         <div className="mt-3 h-10 bg-white w-32 text-q-bg flex justify-center items-center rounded-lg">
-          <span>Input Data</span>
+          <Link href="/data">Enter Data</Link>
+        </div>
+        <div className="mt-3 h-10 bg-white w-32 text-q-bg flex justify-center items-center rounded-lg">
+          <Link href="/expiry">Expiry Checker</Link>
+
+          {/* <span>Expiry Checker</span> */}
         </div>
         <div className="mt-3 h-10 bg-white w-32 flex text-q-bg justify-center items-center rounded-lg">
-          <span>Input Data</span>
+          <span>Analytics</span>
         </div>
       </div>
       <div className=" ml-6 mr-6 mt-8 rounded-xl bg-white w-auto auto h-4/6">
         <div className="flex justify-center pt-2 text-q-bg">Ai Chatbot</div>
         <div className="pt-96 mt-12 h-8 flex  gap-3 justify-between w-full">
           <div className="ml-6">
-            <textarea className="w-72 h-10 rounded-xl mr bg-q-bg border-0" type="text" />
+            <textarea
+              className="w-72 h-10 rounded-xl mr bg-q-bg border-0"
+              type="text"
+            />
           </div>
           <button className="mr-6 w-10 rounded-lg h-10 flex justify-center items-center bg-q-bg ">
             <svg
