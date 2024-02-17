@@ -43,49 +43,53 @@ const Home = () => {
         </div>
       </div>
       <div className="ml-9 mr-9 h-0.5 -mt-3 bg-white w-auto"></div>
-      <div className="flex justify-center">
-        <div className="mt-3 h-10 bg-q-green w-56 flex justify-center items-center rounded-lg">
-          <Link href="/community">Exchange Community</Link>
+      <div className="px-8 flex justify-between w-screen">
+        <button className="mt-3 pl-4 w-fu h-10 hover:scale-105 active:scale-95 transition-all bg-q-green w-56 flex justify-start items-center rounded-lg">
+          <Link href="/community"> + Expiry Data</Link>
+        </button>
+        <div className="mt-3 w-14  h-10 bg-q-green  flex justify-center items-center rounded-lg">
+          <Link href="/home">back</Link>
         </div>
       </div>
-      <div className="flex justify-between gap-3 px-8">
-        <div className="mt-3 h-10 bg-white w-32 text-q-bg flex justify-center items-center rounded-lg">
-          <Link href="/data">Enter Data</Link>
-        </div>
-        <div className="mt-3 h-10 bg-white w-32 text-q-bg flex justify-center items-center rounded-lg">
-          <Link href="/expiry">Expiry Checker</Link>
+      <div className="mt-3 ml-8 text-xm font-medium">Items</div>
+      <div className="flex h-14 bg-D-lightGrey rounded-lg mt-2">
+        <div className="bg-q-green flex justify-between h-16 w-full ml-8 mr-8 rounded-lg">
+          <div className="flex flex-col pl-7">
+            <span className="text-D-yellow mt-2 text-xm font-semibold">
+              name{" "}
+            </span>
 
-          {/* <span>Expiry Checker</span> */}
-        </div>
-        <div className="mt-3 h-10 bg-white w-32 flex text-q-bg justify-center items-center rounded-lg">
-          <span>Analytics</span>
-        </div>
-      </div>
-      <div className=" ml-6 mr-6 mt-8 rounded-xl bg-white w-auto auto h-4/6">
-        <div className="flex justify-center pt-2 text-q-bg">Ai Chatbot</div>
-        <div className="pt-96 mt-12 h-8 flex  gap-3 justify-between w-full">
-          <div className="ml-6">
-            <textarea
-              className="w-72 h-10 rounded-xl mr bg-q-bg border-0"
-              type="text"
-            />
+            <span className="text-white text-sm">item</span>
           </div>
-          <button className="mr-6 w-10 rounded-lg h-10 flex justify-center items-center bg-q-bg ">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.40196 6.673C3.14196 4.339 5.54496 2.625 7.66796 3.631L19.612 9.289C21.9 10.372 21.9 13.628 19.612 14.711L7.66796 20.37C5.54496 21.376 3.14296 19.662 3.40196 17.328L3.88196 13H12C12.2652 13 12.5195 12.8946 12.7071 12.7071C12.8946 12.5196 13 12.2652 13 12C13 11.7348 12.8946 11.4804 12.7071 11.2929C12.5195 11.1054 12.2652 11 12 11H3.88296L3.40196 6.673Z"
-                fill="#8AC64D"
-              />
-            </svg>
-          </button>
+          <div className="flex gap-4 justify-between items-center ">
+          <div >
+          <input className="rounded-lg text-q-bg text-sm pl-3" type="date" />
+          </div>
+            <div className="bg-white w-0.5 h-10">
+              
+            </div>
+
+            <button className="text-D-grey py-1 px-3 rounded-lg z-10 font-bold hover:scale-105 active:scale-95 transition-all">
+              <svg
+                width="29"
+                height="29"
+                viewBox="0 0 29 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.22724 13.1818C8.87764 13.1818 8.54235 13.3206 8.29514 13.5678C8.04794 13.8151 7.90906 14.1503 7.90906 14.4999C7.90906 14.8495 8.04794 15.1848 8.29514 15.432C8.54235 15.6792 8.87764 15.8181 9.22724 15.8181H19.7727C20.1223 15.8181 20.4576 15.6792 20.7048 15.432C20.952 15.1848 21.0909 14.8495 21.0909 14.4999C21.0909 14.1503 20.952 13.8151 20.7048 13.5678C20.4576 13.3206 20.1223 13.1818 19.7727 13.1818H9.22724Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 5.27273C0 3.87431 0.555518 2.53317 1.54435 1.54435C2.53317 0.555518 3.87431 0 5.27273 0H23.7273C25.1257 0 26.4668 0.555518 27.4557 1.54435C28.4445 2.53317 29 3.87431 29 5.27273V23.7273C29 25.1257 28.4445 26.4668 27.4557 27.4557C26.4668 28.4445 25.1257 29 23.7273 29H5.27273C3.87431 29 2.53317 28.4445 1.54435 27.4557C0.555518 26.4668 0 25.1257 0 23.7273V5.27273ZM5.27273 2.63636H23.7273C24.4265 2.63636 25.097 2.91412 25.5915 3.40854C26.0859 3.90295 26.3636 4.57352 26.3636 5.27273V23.7273C26.3636 24.4265 26.0859 25.097 25.5915 25.5915C25.097 26.0859 24.4265 26.3636 23.7273 26.3636H5.27273C4.57352 26.3636 3.90295 26.0859 3.40854 25.5915C2.91412 25.097 2.63636 24.4265 2.63636 23.7273V5.27273C2.63636 4.57352 2.91412 3.90295 3.40854 3.40854C3.90295 2.91412 4.57352 2.63636 5.27273 2.63636Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>
